@@ -7,7 +7,10 @@ int main(void){
     IO1DIR  = 0x00FF0000;
     while(1){
         IOPIN0 = 0x00008000;   IOPIN1 = 0x00770000;
+        IOCLR0 = 0x00078000;
         IOPIN0 = 0x00010000;   IOPIN1 = 0x00770000;
+        IOCLR0 = 0x00078000;
         IOPIN0 = 0x00020000;   IOPIN1 = 0x00790000;
+        IOCLR0 = 0x00078000;
     }
 }
